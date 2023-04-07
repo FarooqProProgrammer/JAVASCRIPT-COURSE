@@ -1,7 +1,6 @@
 
 // ============ QNO 1 ==============================
-// Write a JavaScript program that accepts two numbers in two prompts and
-// displays the larger one in the console.
+
 
 let number1 = prompt("Enter the first number:");
 let number2 = prompt("Enter the second number:");

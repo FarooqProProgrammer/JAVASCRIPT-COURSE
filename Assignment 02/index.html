@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- ----------------- HTML FOR QNO 03 ------------------------------- -->
+    <div id="p__tag">
+
+    </div>
+    <!-- ----------------- HTML FOR QNO 03 ------------------------------- -->
+
+
+    <!-- ------------------- HTML FOR QNO 04 --------------------------------- -->
+    <ul id="myUL">
+
+    </ul>
+    <!-- ------------------- HTML FOR QNO 04 --------------------------------- -->
+
+
+    <!-- ------------------------- HTML FOR QNO 05 ---------------------------- -->
+    <div id="ColorChange" style="width:30px;height:40px">
+
+    </div>
+    <!-- ------------------------- HTML FOR QNO 05 ---------------------------- -->
+
+    <script>
+
+
+        // ----------------------------- QNO 01 ------------------------------------
+        // function createClosuertoAdd(num) {
+        //     return function (value) {
+        //         return num + value;
+        //     }
+        // }
+        // var addFiveNo = createClosuertoAdd(5);
+        // console.log(addFiveNo(3)); 
+
+
+        // ----------------------------- QNO 01 ------------------------------------
+
+
+
+
+        // ------------- QNO 02 ---------------------------------------------
+        // Write a recursive function that searches an array for a specific value. The
+        // function should return true if the value is found, and false if it is not. You
+        // can assume that the array is not nested.
+        // in javascript
+        // function searchArray(arr, value) {
+        //     if (arr.length === 0) {
+        //         return false;
+        //     }
+        //     if (arr[0] === value) {
+        //         return true;
+        //     }
+        //     return searchArray(arr.slice(1), value);
+        // }
+
+        // const arr = [1, 2, 3, 4, 5];
+        // console.log(searchArray(arr, 3)); // true
+        // ------------- QNO 02 ---------------------------------------------
+
+
+
+        // --------------------------------- QNO 03 -------------------------------
+        //         Write a function that adds a new paragraph element to the bottom of an
+        // HTML document. The function should take a string argument that will be
+        // used as the text content of the new paragraph element.
+
+        // function addParagraphToDocument(text) {
+        //     var paragraphyCOntainer = document.getElementById("p__tag")
+        //     var paragraph = document.createElement('p');
+        //     paragraph.textContent = text;
+        //     paragraphyCOntainer.appendChild(paragraph);
+        // }
+
+        // addParagraphToDocument("This is a new paragraph.");
+
+        // --------------------------------- QNO 03 -------------------------------
+
+
+
+
+
+        // -------------------------- QNO 04 --------------------------------
+        //         Write a function that adds a new list item to an unordered list in an HTML
+        // document. The function should take a string argument that will be used as
+        // the text content of the new list item.
+
+        // function addListItemToUL(text) {
+        //     var ul = document.getElementById('myUL');
+        //     var li = document.createElement('li');
+        //     li.textContent = text;
+        //     ul.appendChild(li);
+        // }
+        // addListItemToUL("New Item");
+
+        // -------------------------- QNO 04 --------------------------------
+
+
+        // -------------------------- QNO 05 -------------------------------
+
+        //         Write a function that changes the background color of an HTML element.
+        // The function should take two arguments: the first argument is a reference
+        // to the HTML element, and the second argument is a string representing
+        // the new background color.
+
+        // function changeBackgroundColorofHTMLElment(element, colortobAdded) {
+        //     if (element instanceof HTMLElement) {
+        //         element.style.backgroundColor = colortobAdded;
+        //     } else {
+        //         console.error("Invalid element reference provided.");
+        //     }
+        // }
+        // var element = document.getElementById('ColorChange');
+        // var colortobAdded = 'red';
+        // changeBackgroundColorofHTMLElment(element, colortobAdded);
+
+        // -------------------------- QNO 05 -------------------------------
+
+
+
+        // -------------------- QNO 06 ----------------------------------------------
+        // Write a function that saves an object to localStorage. The function should
+        // take two arguments: the first argument is a string representing the key to
+        // use for storing the object, and the second argument is the object to store.
+
+
+        // function setLocalStorage(key, obj) {
+        //     var json = JSON.stringify(obj);
+
+        //     localStorage.setItem(key, json);
+        // }
+
+        // var Obj = { name: "Farooq",Skills:"React js" };
+        // var key = "Farooq123";
+        // setLocalStorage(key, Obj);
+
+
+        // -------------------- QNO 06 ----------------------------------------------
+
+
+        // --------------------- QNO 07 ---------------------------------------------
+        // Write a function that retrieves an object from localStorage. The function
+        // should take one argument, which is a string representing the key used to
+        // store the object. The function should return the object.
+
+
+        // function getLocalStorage(id) {
+        //     var json = localStorage.getItem(id);
+        //     return JSON.parse(json);
+        // }
+
+        // var id = "Farooq123";
+        // var Obj = getLocalStorage(id);
+        // console.log(Obj);
+
+
+        // --------------------- QNO 07 ---------------------------------------------
+
+
+        // ----------------------- QNO 08 ------------------------------
+        // function setLocalStorage(key, obj) {
+        //     var json = JSON.stringify(obj);
+
+        //     localStorage.setItem(key, json);
+        // }
+
+        // function saveToLocalStorage(obj) {
+        //     let keys = Object.keys(obj);
+        //     console.log(keys)
+
+        //     for (let i = 0; i < keys.length; i++) {
+        //         console.log(obj[keys[i]])
+        //         setLocalStorage(keys[i], obj[keys[i]])
+        //     }
+
+
+        //     var newObj = {};
+        //     for (var i = 0; i < localStorage.length; i++) {
+        //         var key = localStorage.key(i);
+        //         for (let i = 0; i < keys.length; i++) {
+        //             if (key == keys[i]) {
+        //                 var json = localStorage.getItem(key);
+        //                 var value = JSON.parse(json);
+        //                 newObj[key] = value;
+        //             }
+        //         }
+        //     }
+        //     return newObj;
+        // }
+
+
+        // const getAll = saveToLocalStorage({ NAME: "FAROOQ",SHOP:"BUSINESS",JAVASCRIPT_LIBRARY:"REACT JS", BUSINESS: "FRONT END" })
+        // console.log(getAll)
+
+
+        // ----------------------- QNO 08 ------------------------------
+
+
+
+
+    </script>
+</body>
+
+</html>
